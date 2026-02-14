@@ -41,7 +41,7 @@ export default function LovePage() {
     "na paavam 😭",
   ];
 
-  const hearts = useMemo(() => Array.from({ length: 10 }), []);
+  const hearts = useMemo(() => Array.from({ length: 8 }), []);
 
   const pageAnim = {
     initial: { opacity: 0, y: 40 },
@@ -78,10 +78,10 @@ export default function LovePage() {
   return (
     <div
       ref={containerRef}
-      className="h-screen w-screen overflow-hidden bg-gradient-to-br from-pink-100 via-white to-pink-200 flex items-center justify-center relative"
+      className="min-h-[100svh] w-full overflow-hidden bg-gradient-to-br from-pink-100 via-white to-pink-200 flex items-center justify-center relative"
     >
       <motion.div
-        className="pointer-events-none absolute w-[120vw] h-[120vw] rounded-full bg-pink-300/30 blur-3xl"
+        className="pointer-events-none absolute w-[120vw] h-[120vw] rounded-full bg-pink-300/30 blur-2xl will-change-transform"
         animate={{ scale: [1, 1.1, 1], rotate: [0, 8, 0] }}
         transition={{ duration: 16, repeat: Infinity, ease: "easeInOut" }}
       />
@@ -90,7 +90,7 @@ export default function LovePage() {
         {hearts.map((_, i) => (
           <motion.div
             key={i}
-            className="absolute text-pink-300 text-2xl"
+            className="absolute text-pink-300 text-2xl will-change-transform transform-gpu"
             style={{ left: `${5 + i * 9}%`, bottom: -40 }}
             animate={{ y: [-20, -140], opacity: [0, 1, 0] }}
             transition={{ duration: 6 + i, repeat: Infinity, delay: i * 0.6 }}
@@ -245,7 +245,7 @@ export default function LovePage() {
             <div className="flex gap-6 items-center justify-center">
               <motion.button
                 animate={{ scale: yesSize }}
-                transition={{ type: "spring", stiffness: 120, damping: 12 }}
+                transition={{ duration: 0.25 }}
                 onClick={handleYes}
                 className="px-6 py-3 rounded-2xl bg-pink-500 text-white text-lg shadow-xl"
               >
@@ -286,6 +286,12 @@ export default function LovePage() {
           50% { transform: translateX(4px); }
           75% { transform: translateX(-2px); }
           100% { transform: translateX(0); }
+        }
+
+        * {
+          -webkit-font-smoothing: antialiased;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
         }
       `}</style>
     </div>
