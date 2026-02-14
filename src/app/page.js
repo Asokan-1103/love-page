@@ -17,11 +17,11 @@ export default function LovePage() {
     "hello",
     "plijjj ",
     "pleeeeeej 😭",
-    "na paavam 😭",
-    "na paavam 😭",
-    "na paavam 😭",
-    "na paavam 😭",
-    "na paavam 😭",
+    "anniayaym 😭",
+    "alooooooooo 😭",
+    "plsplsplsplsplspls 😭",
+    "na paavammmmmmm 😭",
+    "na paavamm 😭",
     "na paavam 😭",
     "na paavam 😭",
     "na paavam 😭",
@@ -104,7 +104,7 @@ export default function LovePage() {
         {page === "intro1" && (
           <motion.div key="intro1" {...pageAnim} className="text-center px-6">
             <h1 className="text-3xl font-semibold text-gray-800 mb-6">
-              Gudduumarninggguuu Strawwberryuuuu
+              Heyy Malarvizhiii !!
             </h1>
             <button
               onClick={() => setPage("intro2")}
@@ -118,7 +118,7 @@ export default function LovePage() {
         {page === "intro2" && (
           <motion.div key="intro2" {...pageAnim} className="text-center px-6">
             <h1 className="text-3xl font-semibold text-gray-800 mb-6">
-              Ennada idhu nu paakuriya 💗
+              Ennada idhu nu paakuriya 😂😂
             </h1>
             <button
               onClick={() => setPage("intro3")}
@@ -132,7 +132,7 @@ export default function LovePage() {
         {page === "intro3" && (
           <motion.div key="intro3" {...pageAnim} className="text-center px-6">
             <h1 className="text-2xl font-semibold text-gray-800 mb-6">
-              I thought I'll do something special for you 
+              I thought I'll do something special for you today 
             </h1>
             <button
               onClick={() => setPage("intro4")}
@@ -146,7 +146,7 @@ export default function LovePage() {
         {page === "intro4" && (
           <motion.div key="intro4" {...pageAnim} className="text-center px-6">
             <h1 className="text-2xl font-semibold text-gray-800 mb-6">
-              I hope you like it 🥰🥰
+              I hope you'll like it 🥰🥰
             </h1>
             <button
               onClick={() => setPage("intro5")}
@@ -181,7 +181,7 @@ export default function LovePage() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               onKeyDown={(e) => e.key === "Enter" && checkPassword()}
-              placeholder="Type emoji here"
+              placeholder="emoji ah inga type pannu once"
               className="text-center text-2xl px-4 py-3 rounded-2xl border border-pink-200 shadow-inner outline-none mb-4"
             />
 
@@ -197,7 +197,7 @@ export default function LovePage() {
         {page === "wholesome1" && (
           <motion.div key="wholesome1" {...pageAnim} className="text-center px-6">
             <h2 className="text-3xl font-semibold text-gray-800 mb-6">
-              Paravaillayaeeee, ok ippo nee than nu verify panniyaachu 💗
+              Paravaillayaeeee, ok ippo nee than nu verify panniyaachu 😎😎
             </h2>
             <button
               onClick={() => setPage("wholesome2")}
@@ -272,7 +272,7 @@ export default function LovePage() {
               transition={{ duration: 0.8 }}
               className="text-4xl font-semibold text-gray-800"
             >
-              unnudaya sunshine aaga un koodayae irupen, yes sonnadharku nandri 💗
+              Thank you for choosing me as your Valentine, I will try to do everything I can in my power to keep you happy 🥰 Looking forward to our date tomorrow... Happy Valentine's Day Malarvizhiiiiiiiii  💗
             </motion.div>
           </motion.div>
         )}
